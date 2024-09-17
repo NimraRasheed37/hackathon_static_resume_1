@@ -1,20 +1,17 @@
-/* Reset some default styles */
-body, h1, h2, h3, p, ul {
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* General styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #9cb188;
     color: #333;
     padding: 20px;
-    
 }
 
-/* Header styles */
 header {
     display: grid;
     grid-template-columns: 300px 1fr;
@@ -41,7 +38,6 @@ header p {
     font-size: 1rem;
 }
 
-/* Main section styles */
 main {
     max-width: 800px;
     margin: 20px auto;
@@ -67,21 +63,20 @@ h2 {
 ul li{
     margin-left: 20px;
 }
-/* Style for the toggle button */
+
 .toggle-icon {
     background: none;
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
     color: #333;
-    margin-left: 10px; /* Adjust this if needed */
+    margin-left: 10px;
 }
 
 .toggle-icon:focus {
     outline: none;
 }
 
-/* Adjust alignment */
 h2 {
     display: flex;
     justify-content: space-between;
@@ -125,3 +120,36 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 500px){
+header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+.buttons button{
+    font-size: 13px;
+}
+}
+
+@media (max-width: 830px){
+    body{
+        font-size: 12px;
+    }
+    header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 
+    }
+    header h1 {
+        margin: 0;
+        font-size: 30px;
+    }
+    header p{
+        font-size: 12px;
+    }
+    }
