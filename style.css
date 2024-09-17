@@ -121,8 +121,9 @@ a:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 500px){
-header{
+@media (max-width: 550px){
+
+    header{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -139,11 +140,6 @@ header h1 {
 @media (max-width: 830px){
     body{
         font-size: 12px;
-    }
-    header{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 
     }
     header h1 {
         margin: 0;
